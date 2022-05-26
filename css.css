@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#banner{
+    padding-top: 20px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/banner1.jpg);
+}
+#banner img{
+    float: left;
+    max-width: 200px;
+}
+#banner a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    border-radius: 25px;
+}
+#banner-content{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+#banner-content h1{
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#banner-content input{
+    padding: 5px 15px;
+    border-radius: 25px 0px 0px 25px;
+    display: inline-block;
+    width: 90%;
+    border: none;
+    max-width: 500px;
+    margin-top: 20px;
+    outline: none;
+
+}
+#banner-content button{
+    background-color: teal;
+    padding: 5px 15px;
+    border-radius: 0px 25px 25px 0px;
+    border: none;
+    color: white;
+    
+}
+@media screen and (max-width:760px){
+    #banner-content input{
+        padding: 5px 15px;
+        border-radius: 25px;
+        display: inline-block;
+        width: 90%;
+        border: none;
+        max-width: 500px;
+        margin-top: 30px;
+        font-size: 15px;      
+    }
+    #banner-content button{
+        background-color: teal;
+        padding: 5px 35px;
+        border-radius:25px;
+        border: none;
+        color: white;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    #banner-content h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #banner-content h5{
+        font-size: 14px;
+    }
+    #banner img{
+        max-width: 130px;
+    }
+}
+
+
+/* feature section */
+
+.feature{
+    padding: 5% 0;
+}
+.feature h2{
+    font-size: 40px;
+    margin: 10px 0px 30px 0px;
+}
+.feature-img{
+    position: relative;
+}
+.feature-box{
+    padding: 10px;
+}
+.feature-box img{
+    width: 100%;
+}
+.feature-icon{
+    color: orangered;
+    background: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.price{
+    padding: 15px 10px;
+    background: orangered;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    bottom: -35px;
+}
+.feature-details .fas, .far{
+    color: orangered;
+    margin-right: 6px;
+}
+.feature-details{
+    text-align: left;
+    padding: 40px 15px 20px 15px;
+    border: 1px solid rgb(180, 179, 179);
+    border-top: none;
+}
+.feature-details p{
+    text-align: justify;
+    font-size: 12px;
+}
+@media screen and (max-width: 700px){
+    .feature h2{
+        font-size: 25px;
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+/* gallery Section */
+
+.gallery{
+    background: gainsboro;
+    padding: 5% 0;
+}
+.gallery h2{
+    font-size: 40px;
+}
+.gallery img{
+    margin: 0px;
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+.galley-box:hover img{
+    transform: scale(1.1);
+}
+.galley-box{
+    padding: 5px;
+    position: relative;
+}
+.galley-box h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 3px 3px 10px rgb(61, 61, 61);
+}
+@media screen and (max-width: 700px){
+    .gallery h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+}
+
+
+/* offer section */
+.offer{
+    height: 80vh;
+    background-image: url(images/banner2.jpg);
+    display: flex;
+    align-items: center;
+}
+#offer-row{
+    background-color:rgba(0,0,0,0.7) ;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+#offer-row button{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px ;
+    padding: 8px 20px;
+    margin-top: 20px;
+}
+
+
+/* review section */
+
+.review{
+    padding: 5% 0;
+
+}
+.review h2{
+    margin-top: 20px 0;
+    font-size: 40px;
+}
+.review-details{
+    position: relative;
+}
+.review img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    position: absolute;   
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+}
+.review p{
+    font-size: 18px;
+    margin: 20px 10px;
+}
+.review-box{
+    padding: 20px 10px 40px 10px;
+    box-shadow: 0px 0px 10px 0 black;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 700px){
+    .review h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* footer section */
+
+.footer i{
+    color: white;
+    margin-right: 10px;
+}
+.footer{
+    background-image: linear-gradient(to top, rgba(116, 4, 116,1), rgba(133, 32, 133,0.9)) ;
+    padding: 5% 0;
+    color: white;
+
+}
+.footer .details{
+    padding-right: 10px;
+}
+.footer .details img{
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+.footer h4{
+    padding-bottom: 20px;
+}
+.footer hr{
+    background: white;
+    margin: 20px 0px;
+}
+
